@@ -1,0 +1,207 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styles */
+body {
+  background: #ffffff;  /* Clean white background */
+  color: #333;  /* Dark text color for readability */
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem;  /* Increased padding for better spacing */
+  background: linear-gradient(135deg, #ffb6c1, #aec6cf); /* Pastel pink to pastel blue gradient */
+  border-bottom: 3px solid #ff9aa2;  /* Soft pink border for the header */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+header h1 {
+  font-size: 3rem;  /* Larger title for better emphasis */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;  /* White text for the title */
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Soft shadow for readability */
+}
+
+/* Hover Effect */
+header:hover {
+  background: linear-gradient(135deg, #aec6cf, #ffb6c1);  /* Reversed gradient on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);  /* Larger shadow on hover */
+}
+
+/* Profile Container */
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Profile Header */
+.profile-header {
+  text-align: center;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.profile-header .center {
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.profile-header h1 {
+  font-size: 2.2rem;  /* Slightly larger font for the name */
+  color: #ff9aa2;  /* Soft pink for name */
+  margin-bottom: 10px;
+}
+
+.profile-header h2 {
+  font-size: 1.4rem;  /* Larger font for the address */
+  color: #aec6cf;  /* Soft blue for address */
+}
+
+.profile-header p {
+  font-size: 1.1rem;
+  color: #ccc;  /* Light grey for contact information */
+  margin-top: 10px;
+}
+
+/* Profile Section */
+.profile-section {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: rgba(240, 240, 240, 0.8);  /* Soft white background for sections */
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section h3 {
+  font-size: 2rem;
+  color: #ff9aa2;  /* Soft pink for section titles */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff9aa2;  /* Soft pink underline */
+  padding-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  background: #aec6cf;  /* Pastel blue background for skill tags */
+  padding: 12px 24px;
+  margin: 8px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  color: #ff9aa2;  /* Soft pink text for skill tags */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-5px);  /* Slight lift on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);  /* Increased shadow on hover */
+}
+
+/* Education Section */
+.educationCollege, .educationSeniorSchool, .educationHighSchool {
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #ff9aa2;  /* Soft pink for degree or strand names */
+  margin-bottom: 5px;
+}
+
+.period {
+  color: #a8a8a8;
+  font-size: 1.1rem;
+}
+
+/* Experience Section */
+.experience-item {
+  background: rgba(0, 0, 0, 0.7);  /* Darker background for better text visibility */
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-item h4 {
+  font-size: 1.7rem;
+  color: #ff9aa2;  /* Soft pink for job titles */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.experience-item .period {
+  font-size: 1.2rem;
+  color: #fff;  /* White text for the period for better contrast */
+  margin-bottom: 15px;
+}
+
+.experience-item p {
+  font-size: 1.1rem;
+  color: #ccc;  /* Light grey text for the description */
+  line-height: 1.6;
+}
+
+/* Hover Effect for Experience Items */
+.experience-item:hover {
+  transform: translateY(-5px);  /* Slight lift on hover for interactivity */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);  /* Larger shadow for hover effect */
+}
+
+
+/* Divider Styles */
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9aa2, #aec6cf, #ff9aa2);  /* Divider with pink and blue gradient */
+  margin: 40px 0;
+}
+
+/* Hover Effects for All Sections */
+.profile-section div:hover {
+  transform: scale(1.05);  /* Slight zoom-in effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ff9aa2;  /* Footer link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

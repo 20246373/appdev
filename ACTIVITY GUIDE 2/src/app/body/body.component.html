@@ -1,0 +1,77 @@
+<div class="profile-container">
+        <section class="profile-header">
+            <div class="name-container">
+            </div>
+            <img src="sanaa.jpg" alt="Minatozaki Sana" class="center" width="900" height="500">
+            <h1>{{profile.name}}</h1>
+            <h2>{{profile.address}}</h2>
+            <p><i class="fas fa-phone"></i>{{profile.contact.phone}}</p>
+        </section>
+    
+        <section class="profile-section">
+            <h3>Education: </h3>
+            <div class="educationCollege">
+                <h4>{{profile.educationCollege.degree}}</h4>
+                <p>{{profile.educationCollege.school}}</p>
+                <p class="period">{{profile.educationCollege.year}}</p>
+            </div>
+            <div class="educationSeniorSchool">
+                <h4>{{profile.educationSeniorSchool.strand}}</h4>
+                <p>{{profile.educationSeniorSchool.schoolSeniorSchool}}</p>
+                <p class="period">{{profile.educationSeniorSchool.yearSeniorSchool}}</p>
+            </div>
+            <div class="educationHighSchool">
+                <h4>{{profile.educationHighSchool.grade}}</h4>
+                <p>{{profile.educationHighSchool.schoolHighSchool}}</p>
+                <p class="period">{{profile.educationHighSchool.yearHighSchool}}</p>
+            </div>
+        </section>
+
+        <section class="profile-section">
+                <h3>Skills: </h3>
+                <div class="skills">
+                    <span *ngFor="let skill of profile.skills" class="skill-tag">
+                        {{ skill }}
+                    </span>
+                </div>
+            </section>
+
+            <section class="profile-section">
+                    <h3>Educational Awards: </h3>
+                    <ul>
+                        <li *ngFor="let award of profile.educationalAwards">
+                            <strong>{{award.award}}</strong> ({{award.year}}): {{award.description}}
+                        </li>
+                    </ul>
+                </section>
+
+        <section class="profile-section">
+            <h3>Experience: </h3>
+            <div *ngFor="let job of profile.experience">
+                <div class="experience-item">
+                    <h4>{{job.role}} at {{job.company}}</h4>
+                    <p class="period">{{job.period}}</p>
+                    <p>{{job.description}}</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="profile-section">
+            <h3>Internship and Work Experiences: </h3>
+            <ul>
+                <li *ngFor="let experience of profile.internshipsAndWorkExperience">
+                    <strong>{{experience.role}}</strong> {{experience.period}}: {{experience.description}}
+                </li>
+            </ul>
+        </section>
+    
+        <section class="profile-section">
+            <h3>Currently Enrolled Courses:</h3>
+            <ul>
+                <li *ngFor="let course of profile.currentlyEnrolledCourses">
+                    {{course.course}} - {{course.teacher}}
+                </li>
+            </ul>
+        </section>
+    </div>
+    

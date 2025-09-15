@@ -1,0 +1,40 @@
+/* Header Section */
+header {
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Added gradient for depth */
+  color: #ecf0f1;
+  text-align: center;
+  padding: 3rem 1rem;  /* Increased padding for a larger header */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;  /* Increased margin for better spacing */
+  border-radius: 10px;  /* Rounded corners for a soft feel */
+  transition: all 0.3s ease-in-out;  /* Smooth transition for hover */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;  /* Slightly larger text for more impact */
+  font-weight: 700;  /* Bold weight for emphasis */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Soft shadow for better contrast */
+}
+
+/* Hover Effect */
+header:hover {
+  background: linear-gradient(135deg, #34495e, #2c3e50);  /* Reversed gradient on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);  /* Larger shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 0.5rem;  /* Adjusted padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 2rem;  /* Reduced font size for smaller screens */
+  }
+}
