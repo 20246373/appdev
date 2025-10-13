@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}

@@ -1,0 +1,120 @@
+/* Container for the landing page */
+.landing {
+  padding: 20px;
+  margin-left: 250px; /* Adjust this value based on the sidebar width */
+  background-color: #f3f3f3;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 30px;
+}
+
+.landing h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+.landing ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.landing ul li {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.landing-img {
+  width: 80%;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Leader detail section styling */
+.leader-container {
+  display: flex;
+  justify-content: flex-start;  /* Align items horizontally */
+  align-items: center;  /* Vertically center the items */
+  gap: 30px;  /* Add some space between text and image */
+  padding: 20px;
+}
+
+.leader-img {
+  width: 40%;  /* Increase image width */
+  max-width: 800px;  /* Maximum image width */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Optional: Hover effect for image */
+.leader-img:hover {
+  transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+/* Ensure text is aligned to the left */
+.leader-text {
+  text-align: left;  /* Align text to the left */
+  max-width: 500px;  /* Limit text width */
+}
+
+/* Optional: Styling for Leader Name, City, etc. */
+.leader-text h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.leader-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.leader-text ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.leader-text ul li {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Optional: Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .leader-img {
+    width: 250px;  /* Adjust to a smaller size on smaller screens */
+  }
+
+  .leader-text {
+    max-width: 100%;
+  }
+}

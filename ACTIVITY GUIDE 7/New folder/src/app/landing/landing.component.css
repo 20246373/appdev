@@ -1,0 +1,44 @@
+.landing {
+  padding: 20px;
+  padding-left: 250px; /* Adjust this value based on sidebar width */
+  background-color: #f3f3f3;
+  font-family: 'Arial', sans-serif;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-img {
+  width: 80%;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-button {
+  background-color: #4567b7;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  background-color: #3a5a80;
+}

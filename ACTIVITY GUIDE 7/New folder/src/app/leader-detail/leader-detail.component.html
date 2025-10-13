@@ -1,0 +1,15 @@
+<div *ngIf="leader" class="leader-container">
+    <img [src]="'/images/gymleaders/' + leader.image" alt="{{ leader.name }}" class="leader-img">
+    
+    <div class="leader-text">
+      <h2>{{ leader.name }} – {{ leader.city }}</h2>
+      <p><strong>Specialty:</strong> {{ leader.specialty }}</p>
+      <p><strong>Gym Badge:</strong> {{ leader.badge }}</p>
+      <p>{{ leader.description }}</p>
+
+      <ul>
+        <li *ngFor="let poke of leader.pokemon">{{ poke }}</li>
+      </ul>
+    </div>
+  </div>
+  
